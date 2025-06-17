@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mad Libs</title>
+  <style>
+    body {
+      background-image: url('lebron angry.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      text-shadow: 1px 1px 3px black;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 48px;
+    }
+
+    p {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      margin-top: 30px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mad Libs</h1>
+
+  <script>
+    // Ask the user to input words
+    let name = prompt("Give me a name:");
+    let food = prompt("Name a food:");
+    let verb = prompt("Give me a verb:");
+    let place = prompt("Name a place:");
+    let emotion = prompt("Name an emotion:");
+    let adjective = prompt("Give me an adjective:");
+    let animal = prompt("Name an animal:");
+
+    // First sentence
+    let paragraph1 = name + " was feeling very " + emotion + " and decided to go to " + place + ".";
+
+    // Second sentence
+    let paragraph2 = "There, they saw a " + adjective + " " + animal + " eating " + food + " while trying to " + verb + ".";
+
+    // Combine into full story
+    let story = paragraph1 + " " + paragraph2;
+
+    // Show the story in an alert and write it to the page
+    alert(story);
+    document.write("<p>" + story + "</p>");
+  </script>
+</body>
+</html>
