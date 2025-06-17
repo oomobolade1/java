@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Activity 1</title>
+</head>
+<body>
+  <h1>Oluseye And LeBron JavaScript Activity 1</h1>
+
+
+  <p id="message1">Click the button.</p>
+  <button onclick="changeMessage1()">Click Me!</button>
+
+  <p id="message2">Click this one too!</p>
+  <button onclick="changeMessage2()">Click Me next!</button>
+
+
+  <br><br>
+  <img id="myImage" src="lebron chill.jpg" alt="lebron" width="150">
+  <br>
+  <button onclick="turnOn()">Turn On</button>
+  <button onclick="turnOff()">Turn Off</button>
+
+  <script>
+    alert("Is Oluseye the goat");
+
+
+    function changeMessage1() {
+      document.getElementById("message1").innerHTML = "Oluseye is the goat p.s he is also taller than lashe!";
+    }
+
+    function changeMessage2() {
+      document.getElementById("message2").innerHTML = "lebron!";
+    }
+
+
+    function turnOn() {
+      document.getElementById("myImage").src = "lebron angry.jpg";
+    }
+
+    function turnOff() {
+      document.getElementById("myImage").src = "lebron chill.jpg";
+    }
+  </script>
+</body>
+</html>
